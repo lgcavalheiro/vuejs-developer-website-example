@@ -1,0 +1,14 @@
+header, footer {
+  background-color: darkred;
+  position: absolute;
+  width: 100%;
+}
+
+header {
+  top: 0;
+}
+
+footer {
+  bottom: 0;
+}
+

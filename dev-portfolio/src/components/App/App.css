@@ -25,20 +25,6 @@ a {
   color: #42b983;
 }
 
-header, footer {
-  background-color: darkred;
-  position: absolute;
-  width: 100%;
-}
-
-header {
-  top: 0;
-}
-
-footer {
-  bottom: 0;
-}
-
 html, body {
  margin: 0;
 }
