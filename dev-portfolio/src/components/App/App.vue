@@ -1,7 +1,7 @@
 <template>
   <div>
     <Navigation></Navigation>
-    <div id="main-content" style="position: relative;top: 256px;">
+    <div id="main-content">
       <router-view></router-view>
     </div>
   </div>
