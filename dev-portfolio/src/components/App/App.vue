@@ -1,10 +1,10 @@
 <template>
   <div>
     <Navigation></Navigation>
-    <div id="content">
-      <h1>CONTENT</h1>
+    <div id="main-content" style="position: relative;top: 256px;">
+      <router-view></router-view>
     </div>
   </div>
 </template>
 <script src="./App.js"></script>
-<style src="./App.css"><style/>
+<style src="./App.css"></style>

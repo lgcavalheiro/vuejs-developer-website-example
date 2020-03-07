@@ -23,4 +23,4 @@
   </div>
 </template>
 <script src="./Navigation.js"></script>
-<style src="./Navigation.css"><style/>
+<style src="./Navigation.css"></style>
