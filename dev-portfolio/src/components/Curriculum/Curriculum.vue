@@ -68,7 +68,7 @@
           </ul>
         </div>
         <div class="col-2">
-          <ul>
+          <ul style="list-style-type:none;">
             <li v-for="(skill, index) in skills.practices" v-bind:key="index">
               {{skill}}
             </li>

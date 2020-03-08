@@ -35,7 +35,7 @@ export default {
           {name: 'Bootstrap', icon: 'fab fa-bootstrap fa-2x' },
           {name: 'Node.js', icon: 'fab fa-node-js fa-2x' },
         ],
-        practices: ['Scrum', 'Kanban', 'Clean Code']
+        practices: ['MySQL','SQL Server','MongoDB', 'DB2','Scrum', 'Kanban', 'Clean Code']
       }
     }
   }
