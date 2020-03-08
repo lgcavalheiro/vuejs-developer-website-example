@@ -3,6 +3,11 @@ div {
   text-align: center;
 }
 
+.content-box {
+  width: 90vw;
+  height: auto;
+}
+
 .d-flex{
   background-color: darkred;
   font-size: 1.8vw;
@@ -10,6 +15,6 @@ div {
   height: fit-content;
   position: relative;
   top: 8rem;
-  left: 6rem;
+  left: 4rem;
   padding: .5rem;
 }

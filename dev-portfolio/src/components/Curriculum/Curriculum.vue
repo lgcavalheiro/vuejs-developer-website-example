@@ -1,6 +1,81 @@
 <template>
   <div>
-    <h1>{{ msg }}</h1>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-4"><h3>Work history</h3></div>
+        <div class="col-4"><h3>Academics and Certifications</h3></div>
+        <div class="col-4"><h3>Skills</h3></div>
+      </div>
+      <div class="row">
+        <div class="col-4">
+
+          <div class="accordion" id="accordionExample">
+            <div class="card bg-dark">
+              <button class="btn btn-dark" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                {{work[0].name}}
+              </button>
+              <div id="collapseOne" class="collapse" data-parent="#accordionExample">
+                <ul>
+                  <li>Description: {{work[0].description}}</li>
+                  <li>Results: {{work[0].results}}</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card bg-dark">
+              <button class="btn btn-dark collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                {{work[1].name}}
+              </button>
+              <div id="collapseTwo" class="collapse" data-parent="#accordionExample">
+                <ul>
+                  <li>Description: {{work[1].description}}</li>
+                  <li>Results: {{work[1].results}}</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card bg-dark">
+              <button class="btn btn-dark collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                {{work[2].name}}
+              </button>
+              <div id="collapseThree" class="collapse" data-parent="#accordionExample">
+                <ul>
+                  <li>Description: {{work[2].description}}</li>
+                  <li>Results: {{work[2].results}}</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-4">
+          <ul class="text-left">
+            <li v-for="(degree, index) in degrees" v-bind:key="index">
+              {{degree}}
+            </li>
+          </ul>
+        </div>
+        <div class="col-1">
+          <ul style="list-style-type:none;">
+            <li v-for="(skill, index) in skills.languages" v-bind:key="index">
+              <i v-bind:class="skill.icon"></i>
+            </li>
+          </ul>
+        </div>
+        <div class="col-1">
+          <ul style="list-style-type:none;">
+            <li v-for="(skill, index) in skills.frameworks" v-bind:key="index">
+              <i v-bind:class="skill.icon"></i>
+            </li>
+          </ul>
+        </div>
+        <div class="col-2">
+          <ul>
+            <li v-for="(skill, index) in skills.practices" v-bind:key="index">
+              {{skill}}
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 <script src="./Curriculum.js"></script>

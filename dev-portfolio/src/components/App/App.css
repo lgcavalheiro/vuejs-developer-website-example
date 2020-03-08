@@ -9,6 +9,8 @@
 
 html, body {
   margin: 0;
+  background: url('../../assets/bg.jpg') no-repeat center fixed;
+  background-size: cover;
   background-color: #313131;
 }
 

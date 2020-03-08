@@ -4,7 +4,6 @@ import portfolio from './components/Portfolio/Portfolio.vue'
 import contact from './components/Contact/Contact.vue'
 
 export default [
-  {path: '/' },
   {path: '/about', component: about },
   {path: '/curriculum', component: curriculum },
   {path: '/portfolio', component: portfolio },

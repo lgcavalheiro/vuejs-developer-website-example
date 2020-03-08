@@ -1,3 +1,13 @@
 div {
   color: whitesmoke;
+  text-align: center;
+}
+
+.container-fluid{
+  background-color: darkred;
+  position: relative;
+  top: 6rem;
+  width: fit-content;
+  padding-bottom: .5rem;
+  padding-top: .5rem;
 }
