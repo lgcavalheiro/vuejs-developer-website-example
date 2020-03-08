@@ -6,14 +6,15 @@ div {
 .container-fluid{
   background-color: darkred;
   position: relative;
-  top: 13vh;
+  top: 12vh;
+  height: 512px;
   width: fit-content;
   padding-bottom: .5rem;
   padding-top: .5rem;
 }
 
 .card {
-  font-size: 8px;
+  font-size: 10px;
 }
 
 #skills{
