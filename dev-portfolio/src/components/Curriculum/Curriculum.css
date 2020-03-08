@@ -6,7 +6,7 @@ div {
 .container-fluid{
   background-color: darkred;
   position: relative;
-  top: 5rem;
+  top: 13vh;
   width: fit-content;
   padding-bottom: .5rem;
   padding-top: .5rem;
