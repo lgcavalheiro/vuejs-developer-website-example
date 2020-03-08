@@ -11,3 +11,12 @@ div {
   padding-bottom: .5rem;
   padding-top: .5rem;
 }
+
+.card {
+  font-size: 8px;
+}
+
+#skills{
+  position: relative;
+  right: 2vh;
+}

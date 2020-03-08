@@ -2,13 +2,8 @@
   <div>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-4"><h3>Work history</h3></div>
-        <div class="col-4"><h3>Academics and Certifications</h3></div>
-        <div class="col-4"><h3>Skills</h3></div>
-      </div>
-      <div class="row">
-        <div class="col-4">
-
+        <div class="col-12">
+          <h5>Work history</h5>
           <div class="accordion" id="accordionExample">
             <div class="card bg-dark">
               <button class="btn btn-dark" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
@@ -44,35 +39,62 @@
               </div>
             </div>
           </div>
-
-        </div>
-        <div class="col-4">
+          <br>
+          <h5>Academics and Certifications</h5>
           <ul class="text-left">
             <li v-for="(degree, index) in degrees" v-bind:key="index">
               {{degree}}
             </li>
           </ul>
-        </div>
-        <div class="col-1">
-          <ul style="list-style-type:none;">
-            <li v-for="(skill, index) in skills.languages" v-bind:key="index">
-              <i v-bind:class="skill.icon"></i>
-            </li>
-          </ul>
-        </div>
-        <div class="col-1">
-          <ul style="list-style-type:none;">
-            <li v-for="(skill, index) in skills.frameworks" v-bind:key="index">
-              <i v-bind:class="skill.icon"></i>
-            </li>
-          </ul>
-        </div>
-        <div class="col-2">
-          <ul style="list-style-type:none;">
-            <li v-for="(skill, index) in skills.practices" v-bind:key="index">
-              {{skill}}
-            </li>
-          </ul>
+
+          <h5>Skills</h5>
+          <div class="row" id="skills">
+            <div class="col-3">
+              <ul style="list-style-type:none;">
+                <li v-for="(skill, index) in skills.languages" v-bind:key="index">
+                  <i v-bind:class="skill.icon"></i>
+                </li>
+              </ul>
+            </div>
+            <div class="col-3">
+              <ul style="list-style-type:none;">
+                <li v-for="(skill, index) in skills.extra" v-bind:key="index">
+                  <i v-bind:class="skill.icon"></i>
+                </li>
+              </ul>
+            </div>
+            <div class="col-3">
+              <ul style="list-style-type:none;">
+                <li v-for="(skill, index) in skills.frameworks" v-bind:key="index">
+                  <i v-bind:class="skill.icon"></i>
+                </li>
+              </ul>
+            </div>
+            <div class="col-3">
+              <ul style="list-style-type:none;">
+                <li v-for="(skill, index) in skills.extra2" v-bind:key="index">
+                  <i v-bind:class="skill.icon"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="row" id="skills">
+            <div class="col-6">
+              <ul style="list-style-type:none;">
+                <li v-for="(skill, index) in skills.practices" v-bind:key="index">
+                  {{skill}}
+                </li>
+              </ul>
+            </div>
+            <div class="col-6">
+              <ul style="list-style-type:none;">
+                <li v-for="(skill, index) in skills.practices2" v-bind:key="index">
+                  {{skill}}
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -20,22 +20,27 @@ export default {
         },
       ],
       degrees: [
-        `Associate's degree in Systems Development and Analysis (UNICARIOCA)`
+        `Systems Development and Analysis (UNICARIOCA)`
       ],
       skills:{
         languages: [
           {name: 'HTML', icon: 'fab fa-html5 fa-2x'},
           {name: 'CSS', icon: 'fab fa-css3-alt fa-2x'},
-          {name: 'Javascript', icon: 'fab fa-js fa-2x'},
+        ],
+        extra: [
           {name: 'Python', icon: 'fab fa-python fa-2x'},
           {name: 'Java', icon: 'fab fa-java fa-2x'},
         ],
-        frameworks: [
+        extra2: [
+          {name: 'Javascript', icon: 'fab fa-js fa-2x'},
           {name: 'Vue.js', icon: 'fab fa-vuejs fa-2x' },
+        ],
+        frameworks: [
           {name: 'Bootstrap', icon: 'fab fa-bootstrap fa-2x' },
           {name: 'Node.js', icon: 'fab fa-node-js fa-2x' },
         ],
-        practices: ['MySQL','SQL Server','MongoDB', 'DB2','Scrum', 'Kanban', 'Clean Code']
+        practices: ['MySQL','DB2','MongoDB'],
+        practices2: ['Scrum', 'Kanban', 'Clean Code'],
       }
     }
   }
