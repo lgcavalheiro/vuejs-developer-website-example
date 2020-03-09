@@ -47,6 +47,9 @@
             <li v-for="(degree, index) in degrees" v-bind:key="index">
               {{degree}}
             </li>
+            <li>
+              <img src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/15163263" alt="">
+            </li>
           </ul>
         </div>
 
