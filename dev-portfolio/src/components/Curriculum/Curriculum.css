@@ -4,13 +4,9 @@ div {
 }
 
 .container-fluid{
-  background-color: darkred;
   position: relative;
   top: 12vh;
-  height: 512px;
-  width: fit-content;
-  padding-bottom: .5rem;
-  padding-top: .5rem;
+
 }
 
 .card {
@@ -20,4 +16,10 @@ div {
 #skills{
   position: relative;
   right: 2vh;
+}
+
+#column {
+  background-color: darkred;
+  padding-bottom: .5rem;
+  padding-top: .5rem;
 }

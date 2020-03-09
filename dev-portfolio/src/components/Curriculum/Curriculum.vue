@@ -2,7 +2,7 @@
   <div>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-12">
+        <div class="col-lg col-12 mx-lg-1 my-1" id="column">
           <h5>Work history</h5>
           <div class="accordion" id="accordionExample">
             <div class="card bg-dark">
@@ -39,13 +39,18 @@
               </div>
             </div>
           </div>
-          <br>
+        </div>
+
+        <div class="col-lg col-12 mx-lg-1 my-1" id="column">
           <h5>Academics and Certifications</h5>
           <ul class="text-left">
             <li v-for="(degree, index) in degrees" v-bind:key="index">
               {{degree}}
             </li>
           </ul>
+        </div>
+
+        <div class="col-lg col-12 mx-lg-1 my-1" id="column">
 
           <h5>Skills</h5>
           <div class="row" id="skills">
@@ -79,7 +84,7 @@
             </div>
           </div>
 
-          <div class="row" id="skills">
+          <div class="row pb-4" id="skills">
             <div class="col-6">
               <ul style="list-style-type:none;">
                 <li v-for="(skill, index) in skills.practices" v-bind:key="index">
@@ -96,6 +101,8 @@
             </div>
           </div>
         </div>
+
+
       </div>
     </div>
   </div>
